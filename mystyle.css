@@ -62,6 +62,9 @@ img {
 nav {
   z-index: 10;
 }
+#btn2 {
+  display: none;
+}
 
 .ditaskills {
   width: 100vw;
