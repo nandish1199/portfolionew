@@ -1,0 +1,111 @@
+.bodyy {
+  background-color: rgb(226, 226, 226);
+}
+.imgdiv {
+  width: 300px;
+  height: 300px;
+  border-radius: 30% 70% 70% 30% / 30% 51% 49% 70%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+img {
+  width: 300px;
+  height: 500px;
+  border-radius: 30% 70% 70% 30% / 30% 51% 49% 70%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.mytext {
+  background: #ca4246;
+  background-color: #ca4246;
+  background: conic-gradient(
+    #ff0000 16.666%,
+    #e16541 16.666%,
+    #6f8800 33.333%,
+    #f18f43 33.333%,
+    #f18f43 50%,
+    #8b9862 50%,
+    #8b9862 66.666%,
+    #000000 66.666%,
+    #578cff 83.333%,
+    #0004ff 83.333%
+  );
+  background-size: 57%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-text-animation-rev 1.5s ease infinite;
+
+  cursor: pointer;
+}
+@keyframes rainbow-text-animation-rev {
+  0% {
+    background-size: 300%;
+    background-position: -9em 1em;
+  }
+  20% {
+    background-size: 57%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
+}
+nav {
+  z-index: 10;
+}
+
+.ditaskills {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.exp_list {
+  font-weight: 600;
+}
+.phone-no {
+  animation: phone-no linear 0.2s infinite;
+}
+
+@keyframes phone-no {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* .fa-envelope {
+  animation: fa-encelope linear 1s infinite;
+}
+
+@keyframes fa-encelope {
+  0% {
+    transform: translate(0px);
+  }
+  25% {
+    transform: translate(10px, -10px);
+  }
+  50% {
+    transform: translate(30px, -30px);
+    opacity: ;
+  }
+  100% {
+    transform: translate(0px);
+  }
+} */
